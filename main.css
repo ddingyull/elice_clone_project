@@ -1,0 +1,126 @@
+@import url('https://cdn.jsdelivr.net/gh/orioncactus/pretendard/dist/web/static/pretendard.css');
+
+body{
+  color: #333;
+  background-color: #F0ECFF;
+  font-size: 16px;
+  font-family: Pretendard, -apple-system, BlinkMacSystemFont, system-ui, Roboto, 'Helvetica Neue', 'Segoe UI', 'Apple SD Gothic Neo', 'Noto Sans KR', 'Malgun Gothic', sans-serif;
+}
+a{
+  text-decoration: none;
+}
+ul{
+  list-style: none;
+}
+.inner{
+  width: 1100px;
+  margin: auto;
+  position: relative;
+}
+
+/* HEADER */
+header{
+  background-color: #7353EA;
+}
+header:hover{
+  background-color: #fff;
+  transition: .3;
+}
+header .inner{
+  display: flex;
+  height: 70px;
+  padding: 0 20px;
+}
+.header__logo {
+  height: 20px;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  margin: auto;
+}
+.header__logo a{
+  font-size: 20px;
+  padding: 5px 8px;
+  border-radius: 5px;
+  background-color: #7253E9;
+  color: #fff;
+  font-family: initial;
+}
+/* HEADER menu */
+.header__menu{
+  display: flex;
+  height: 20px;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 150px;
+  margin: auto;
+}
+/* header를 hover 했을 때 다른 태그에 속성값 변경 */
+#inner:hover .header__menu__list{
+  color: #333;
+  transition: .3s;
+}
+/* header를 hover 했을 때 '로그인'버튼 색 변경하고자하는데 안되서 a태그 추가하여
+클래스 선택자 우선순위 점수를 높여서 적용시켰으나 좋은 방법인지 공부 필요 */
+#inner:hover .header__btn__login a{
+  color: #333;
+  transition: .3s;
+}
+
+/* 아이콘 포함한 bgc를 적용하기 위하여 li에 적용하였으나 
+padding, margin값이 다름 확인 필요 */
+.header__menu li:hover{
+  background-color: #e2e2e2;
+  border-radius: 3px;
+}
+.header__menu li a{
+  color: #fff;
+  font-size: 14px;
+  padding: 5px;
+  margin: 5px;
+}
+#inner:hover i{
+  color: #333;
+  transition: .3s;
+}
+.header__menu li >i{
+  font-size: 10px;
+  color: #fff;
+  margin-right: 8px;
+}
+/* 화살표 방향 돌리기 */
+.header__menu li:hover > i{
+  transform: rotate(180deg);
+}
+.header__btn{
+  display: flex;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  height: 20px;
+  right: 20px;
+  margin: auto;
+  font-size: 13px;
+}
+.header__btn__login a{
+  border-radius: 5px;
+  padding: 5px 10px;
+  margin: 0 10px;
+  color: #fff;
+}
+.header__btn__login:hover{
+  cursor: pointer;
+  text-decoration: underline;
+}
+.header__btn__register a{
+  padding: 5px 10px;
+  border: 1px solid transparent;
+  border-radius: 5px;
+  color: #fff;
+  background-color: #333;
+}
+.header__btn__register:hover{
+  opacity: .8;
+  cursor: pointer;
+}
