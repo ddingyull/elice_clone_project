@@ -3,7 +3,7 @@
 body{
   color: #333;
   background-color: #D3CCF7;
-  font-size: 16px;
+  font-size: 14px;
   font-family: Pretendard, -apple-system, BlinkMacSystemFont, system-ui, Roboto, 'Helvetica Neue', 'Segoe UI', 'Apple SD Gothic Neo', 'Noto Sans KR', 'Malgun Gothic', sans-serif;
 }
 a{
@@ -79,39 +79,47 @@ padding, margin값이 다름 확인 필요 */
 }
 
 /* header drop */
-.header__menu .item .contents{
+.header__menu .item .item__contents{
   position: fixed;
   width: 100%;
-  height: 650px;
+  height: 750px;
   left: 0;
-  display: none;
   background-color: #fff;
   top: 56px;
   z-index: 1;
   display: none;
 }
-.header__menu .item:hover .contents{
+.header__menu .item:hover .item__contents{
   display: block;
 }
-.header__menu .item:hover .contents .contetns__menu{
+.header__menu .item:hover .item__contents .item__contetns__menu{
   display: flex;
   width: 100%;
-  padding: 20px 0;
-  height: 630px;
-  transition: .7s;
+  padding: 10px 0;
+  height: 750px;
 }
-.header__menu .item .contents .contetns__menu .inner{
-  
-}
-.header__menu .item .contents .contetns__menu .inner >div>div>ul{
-  display: flex;
-}
-.header__menu .item .contents .contetns__menu .inner >div>div>ul>li{
-  display: flex;
-  width: 400px;
-}
+.header__menu .item .item__contents .item__contetns__menu .inner{
 
+}
+.header__menu .item .item__contents .item__contetns__menu .inner>div>ul{
 
+}
+.header__menu .item .item__contents .item__contetns__menu .inner >div>ul>li{
+  width: 340px;
+  display: flex;
+  /* margin-right:20px; */
+  padding: 20px;
+}
+.header__menu .item .item__contents .item__contetns__menu .inner >div>ul>li i{
+  display: block;
+  font-size: 40px;
+  color: #9C7FFC;
+  margin-right: 10px;
+}
+.header__menu .item .item__contents .item__contetns__menu .inner >div>ul>li>div:nth-child(2)>div:nth-child(2){
+  color: #9499A0;
+  margin: 5px 0;
+}
 /* btn */
 .header__btn{
   display: flex;
